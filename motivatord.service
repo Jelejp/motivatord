@@ -1,0 +1,11 @@
+[Unit]
+Description=Motivator Demon
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/jelejp/motivatord.sh
+Restart=always
+User=jelejp
+
+[Install]
+WantedBy=multi-user.target
